@@ -10,14 +10,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
 
-  
   <header class="site-header">
     <nav class="nav-container">
+
       <a href="index.html" class="logo">Toy Haven</a>
 
-      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -30,18 +35,22 @@
         <li><a href="wishlist.html">Wishlist</a></li>
         <li><a href="feedback.html">Feedback</a></li>
       </ul>
+
     </nav>
   </header>
 
-  
+
   <main class="home-page">
 
-    
     <section class="hero">
       <div class="hero-slider">
 
         <div class="hero-slide active">
-          <img src="images/banners/banner-figurines.png" alt="Figurines collection banner showing action figures and collectibles" class="hero-banner-img">
+          <img
+            src="images/banners/banner-figurines.png"
+            alt="Figurines collection banner showing action figures and collectibles"
+            class="hero-banner-img">
+
           <div class="hero-content">
             <h1>Figurines Collection</h1>
             <p>Action figures, knights, and collectibles for every adventure.</p>
@@ -49,8 +58,13 @@
           </div>
         </div>
 
+
         <div class="hero-slide">
-          <img src="images/banners/banner-toys.png" alt="Toys collection banner showing blocks, plushies and RC cars" class="hero-banner-img">
+          <img
+            src="images/banners/banner-toys.png"
+            alt="Toys collection banner showing blocks, plushies and RC cars"
+            class="hero-banner-img">
+
           <div class="hero-content">
             <h1>Fun Toys for Everyone</h1>
             <p>Blocks, plushies, RC cars, and more to spark imagination.</p>
@@ -58,8 +72,13 @@
           </div>
         </div>
 
+
         <div class="hero-slide">
-          <img src="images/banners/banner-board-games.png" alt="Board games collection banner for family game night" class="hero-banner-img">
+          <img
+            src="images/banners/banner-board-games.png"
+            alt="Board games collection banner for family game night"
+            class="hero-banner-img">
+
           <div class="hero-content">
             <h1>Board Games Night</h1>
             <p>Family-friendly games for game nights and rainy days.</p>
@@ -67,8 +86,13 @@
           </div>
         </div>
 
+
         <div class="hero-slide">
-          <img src="images/banners/banner-diecast-cars.png" alt="Diecast cars collection banner showing collectible model cars" class="hero-banner-img">
+          <img
+            src="images/banners/banner-diecast-cars.png"
+            alt="Diecast cars collection banner showing collectible model cars"
+            class="hero-banner-img">
+
           <div class="hero-content">
             <h1>Diecast Cars</h1>
             <p>Collectible cars and trucks in detailed 1:64 scale.</p>
@@ -78,46 +102,59 @@
 
       </div>
 
-      
+
       <div class="hero-dots">
         <button type="button" class="hero-dot active" aria-label="Slide 1"></button>
         <button type="button" class="hero-dot" aria-label="Slide 2"></button>
         <button type="button" class="hero-dot" aria-label="Slide 3"></button>
         <button type="button" class="hero-dot" aria-label="Slide 4"></button>
       </div>
+
     </section>
 
-    
+
     <section class="featured-section">
       <h2>Featured Products</h2>
-      <p class="section-intro">Hand-picked favourites from our store.</p>
-      <div id="featured-products" class="product-grid">
 
-      </div>
+      <p class="section-intro">
+        Hand-picked favourites from our store.
+      </p>
+
+      <div id="featured-products" class="product-grid"></div>
     </section>
 
-    
+
     <section class="cta-section">
       <h2>Explore Our Full Range</h2>
-      <p>Browse all 20 products across figurines, toys, board games, and diecast cars.</p>
-      <a href="products.html" class="btn btn-primary">Shop All Products</a>
+
+      <p>
+        Browse all 20 products across figurines, toys, board games, and diecast cars.
+      </p>
+
+      <a href="products.html" class="btn btn-primary">
+        Shop All Products
+      </a>
     </section>
 
   </main>
 
-  
+
   <div id="cart-toast" class="cart-toast" hidden></div>
 
-  
+
   <footer class="site-footer">
+
     <div class="footer-container">
+
       <div class="footer-brand">
         <a href="index.html" class="logo">Toy Haven</a>
         <p>Bringing joy to kids of all ages since 2026.</p>
       </div>
 
+
       <div class="footer-links">
         <h3>Quick Links</h3>
+
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
@@ -125,26 +162,54 @@
           <li><a href="wishlist.html">Wishlist</a></li>
           <li><a href="feedback.html">Feedback</a></li>
         </ul>
+
       </div>
+
 
       <div class="footer-newsletter">
         <h3>Newsletter</h3>
-        <p>Get updates on new toys and special offers.</p>
+
+        <p>
+          Get updates on new toys and special offers.
+        </p>
+
         <form class="newsletter-form">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
+
+          <label
+            for="newsletter-email"
+            class="visually-hidden">
+            Email address
+          </label>
+
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required>
+
+          <button type="submit">
+            Subscribe
+          </button>
+
         </form>
+
       </div>
+
     </div>
+
 
     <div class="footer-bottom">
       <p>&copy; 2026 Toy Haven. All rights reserved.</p>
     </div>
+
   </footer>
+
 
   <script src="js/data.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/home.js"></script>
+
 </body>
 </html>
