@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2E1A47">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <title>Toy Haven - Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Toy Haven</a>
+
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main class="cart-page">
+    <h1>Your Cart</h1>
+    <p class="page-intro">Review the items in your shopping cart.</p>
+
+    
+    <div id="empty-cart" class="empty-state" hidden>
+      <p>Your cart is empty.</p>
+      <a href="products.html" class="btn btn-primary">Browse Products</a>
+    </div>
+
+    
+    <div id="cart-content" class="cart-layout" hidden>
+      <div id="cart-items" class="cart-items">
+
+      </div>
+
+      <aside class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+          <span>Total</span>
+          <span id="cart-total" class="summary-total">$0.00</span>
+        </div>
+        <button id="clear-cart-btn" class="btn btn-secondary">Clear Cart</button>
+        <a href="checkout.html" id="checkout-btn" class="btn btn-primary">Proceed to Checkout</a>
+      </aside>
+    </div>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Toy Haven</a>
+        <p>Bringing joy to kids of all ages since 2026.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Get updates on new toys and special offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
